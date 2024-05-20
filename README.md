@@ -41,17 +41,12 @@ The NSUK eVoting System is an online voting platform designed for Nasarawa State
     php artisan key:generate
     ```
 
-4. **Database Migration**:
-    - Run migrations to set up the database schema.
+4. **Database Setup**:
+    - look for database file name evoting(1).sql and create a database with  name evoting import it there, and change your details.
     ```sh
     php artisan migrate
     ```
 
-5. **Seeding the Database**:
-    - Optionally, seed the database with initial data.
-    ```sh
-    php artisan db:seed
-    ```
 
 6. **Run the Application**:
     ```sh
