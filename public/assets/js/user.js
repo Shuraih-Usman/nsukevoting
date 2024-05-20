@@ -1,3 +1,4 @@
+//SHURAIH USMAN CODE - https://github.com/Shuraih-Usman/
 $(document).ready(function() {
 
     var csrfToken = $('meta[name="csrf-token"]').attr('content');
