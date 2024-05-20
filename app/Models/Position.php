@@ -9,6 +9,10 @@ class Position extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'start', 'end'
+    ];
+
     protected $casts = [
         'start' => 'datetime',
         'end' => 'datetime',

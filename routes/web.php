@@ -23,8 +23,17 @@ use App\Models\Vote;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $positions = Position::all();
+    $votes = Candidate::query()
+        ->leftJoin('votes as v', 'v.candidate_id', '=', 'candidates.id')
+        ->leftJoin('positions as p', 'v.election_id', '=', 'p.id')
+        ->select('candidates.id', 'candidates.fullname', DB::raw('COUNT(v.id) as total_votes'), 'p.name')
+        ->groupBy('candidates.id', 'candidates.fullname', 'p.name')
+        ->get();
+    return view('welcome', ['votes' => $votes, 'positions' => $positions]);
 });
+Route::get('/api/election-results', [VoteController::class, 'fetchResults']);
 
 Route::get('admin/login', [AdminController::class, 'Login'])->name('login');
 Route::get('login', [UserController::class, 'Login'])->name('user-login');
