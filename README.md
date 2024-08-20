@@ -98,6 +98,14 @@ The NSUK eVoting System is an online voting platform designed for Nasarawa State
 - Write tests for any new functionality.
 - Submit a pull request with a detailed description of your changes.
 
+## Developers and Contributors
+- **FrontEnd**: Joseph Abraham Dangana
+- **BackEnd**: [Shuraihu Usman](https://github.com/Shuraih-Usman)
+- **Testing**: Yakubu Haruna Gata
+- **Review**: Amarachi Jacinta Anozie
+- **Testing**: Suzzy Bako
+- **Requirement Gathering**: Donatus Chidera Valentine
+
 ## Contact Information
 - **Project Maintainer**: [Shuraih99]
 - **Email**: shuraihusman@gmail.com
