@@ -94,6 +94,7 @@
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="row">
             <!-- Demographic Filter Form -->
+            <h2 class="card-header m-5">Election Results</h2>
             <div class="col-md-4 mb-4">
                 <div class="card">
                     <div class="card-header">
